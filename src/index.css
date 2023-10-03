@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #e5e5e5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.type-area,
+.input--area {
+  margin: 25px 50px 0 50px;
+  padding: 25px;
+  background: #FFF;
+  border-radius: 18px;
+}
+
+.words-inside--area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.words-inside--area>div {
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.input--inside {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.counter {
+  padding: 8px 15px;
+  border: solid 1px #DBDBDB;
+  border-radius: 10px;
+}
+
+input.counter-input {
+  width: 100%;
+  padding: 10px;
+  border: solid 1px #DBDBDB;
+  border-radius: 6px;
+}
+
+.restart-btn button {
+  background: rgb(25, 195, 125);
+  border: none;
+  width: 36px;
+  height: 35px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.restart-btn button svg {
+  width: 18px;
+  color: #FFF;
+}
+
+.words-inside--area>div.active {
+  background: #DBDBDB;
+}
+
+.words-inside--area>div.correct {
+  background: #00800033;
+  color: #FFF;
+}
+
+.words-inside--area>div.incorrect {
+  background: #ff000085;
+  color: #FFF;
+}
+
+.result-pop {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0000003d;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-card {
+  background: #FFF;
+  width: 350px;
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 18px;
+}
+
+.result-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.result-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result-card .restart-btn {
+  width: 100%;
+  padding: 9px;
+  background: rgb(25, 195, 125);
+  border: none;
+  height: 35px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #FFF;
+}
